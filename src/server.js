@@ -2,6 +2,7 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
+const db = require('./_db');
 
 const typeDefs = gql`
   type Game {
